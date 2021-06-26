@@ -34,6 +34,25 @@
                 "isDefault": true
             }
         },
+        // Run tasks
+        {
+            "label": "ros2 run",
+            "detail": "Run a task.",
+            "type": "shell",
+            "command": "ros2 run --merge-install; colcon test-result"
+        },
+        // Launch
+        {
+            "label": "prerun",
+            "type": "shell",
+            "command": ". install/setup.bash"
+        },
+        {
+            "label": "ros2 launch",
+            "detail": "Run a launch file",
+            "type": "shell",
+            "command": "ros2 launch cpp_pubsub both.py"
+        },
         // Clean
         {
             "label": "clean",
